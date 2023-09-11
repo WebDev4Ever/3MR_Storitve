@@ -1943,7 +1943,7 @@ html[dir="rtl"] .btn.btn-lg { font-size: 14px; }
 /* Backgrounds
 ----------------------------------------------------------*/
 /* Image */
-.bg-image, .bg-parallax, .bg-slideshow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center center; background-size: cover; background-repeat: no-repeat; z-index: 0; }
+.bg-image, .bg-parallax, .bg-parallax1, .bg-slideshow { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center left; background-size: cover; background-repeat: no-repeat; z-index: 0; }
 
 .bg-multiply { mix-blend-mode: multiply; }
 
@@ -1958,7 +1958,9 @@ html[dir="rtl"] .btn.btn-lg { font-size: 14px; }
 
 .bg-video-placeholder { display: none; }
 
-.bg-image + *, .bg-parallax + *, .bg-video + * { position: relative; }
+.bg-image + *, .bg-parallax + *, .bg-video + * { position: absolute; }
+
+.bg-parallax1 + * { position: relative; }
 
 /* Map */
 .bg-map { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
